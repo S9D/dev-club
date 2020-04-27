@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="357" height="124" viewBox="0 0 357 124">
+  <defs>
+    <clipPath id="clip-Logo_Light">
+      <rect width="357" height="124"/>
+    </clipPath>
+  </defs>
+  <g id="Logo_Light" data-name="Logo Light" clip-path="url(#clip-Logo_Light)">
+    <rect width="357" height="124" fill="#fff"/>
+    <g id="Text" transform="translate(-73 -186)" opacity="0.75">
+      <text id="_devClub_" data-name="&lt;devClub /&gt;" transform="translate(86 278)" fill="#002e89" font-size="50" font-family="OCRAExtended, OCR A"><tspan x="0" y="0">&lt;devClub /&gt;</tspan></text>
+      <text id="_Colman" data-name="// Colman" transform="translate(86 231)" fill="#859ce7" font-size="25" font-family="OCRAExtended, OCR A" opacity="0.75"><tspan x="0" y="0" letter-spacing="-0.16em">// </tspan><tspan y="0">Colman</tspan></text>
+    </g>
+  </g>
+</svg>

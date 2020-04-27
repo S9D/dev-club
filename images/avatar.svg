@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="160" viewBox="0 0 320 160">
+  <g id="avatar" transform="translate(-160 -230)">
+    <rect id="Rectangle_114" data-name="Rectangle 114" width="320" height="160" transform="translate(160 230)" fill="rgba(201,201,201,0.7)"/>
+    <path id="avatar-2" data-name="avatar" d="M0,434V424c0-11,18-20,40-20s40,9,40,20v10Zm20-60a20,20,0,1,1,20,20A20,20,0,0,1,20,374Z" transform="translate(200 -84)" fill="#12720b"/>
+  </g>
+</svg>

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Dev Club</title>
+	<link rel="stylesheet" href="./css/styles.css">
+	<link rel="stylesheet" href="./css/mobile.css">
+	<script defer src="./js/index.js"></script>
+</head>
+
+<body id="dev-club">
+	<header id="main-header" class="nav">
+		<a href="javascript:changePage('home')" class="logo" data-link="home"><img src="./images/Logo.png"
+				alt="Colman Dev Club"></a>
+		<nav>
+			<ul id="nav-links">
+				<li class="nav-item" id="button-about"><a href="javascript:changePage('about')">About</a></li>
+				<li class="nav-item" id="button-team"><a href="javascript:changePage('team')">Team</a></li>
+				<li class="nav-item" id="button-sponsors"><a href="javascript:changePage('sponsors')">Sponsors</a></li>
+				<li class="nav-item" id="button-contact"><a href="javascript:changePage('contact')">Contact</a></li>
+			</ul>
+			<button>Sign in</button>
+			<a href="javascript:toggleMenu()" id="toggle-button">
+				<span class="bar"></span>
+				<span class="bar"></span>
+				<span class="bar"></span>
+			</a>
+		</nav>
+	</header>
+
+	<main id="main">
+		<div id="home" class="page display">
+			<img src="./images/Logo@2x.png" alt="Colman Dev Club">
+		</div>
+
+		<!-- The vision of the Dev Club -->
+		<div id="about" class="page">
+			<article>
+				<h1 class="page-title">About
+					<span>
+						<a href="#">
+							<img src="./images/li430.png" alt="linked in">
+						</a>
+						<a href="#">
+							<img src="./images/f430.png" alt="fb" class="fbutton">
+						</a>
+					</span>
+				</h1>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+					dolore
+					magna aliqua. Senectus et netus et malesuada fames. Donec adipiscing tristique risus nec. Integer enim neque
+					volutpat ac tincidunt vitae. In dictum non consectetur a erat nam at. Volutpat lacus laoreet non curabitur
+					gravida arcu ac. Neque sodales ut etiam sit amet. Eu consequat ac felis donec et odio. Placerat vestibulum
+					lectus mauris ultrices eros in cursus turpis massa. Neque sodales ut etiam sit amet nisl purus. In nisl nisi
+					scelerisque eu ultrices vitae. Amet venenatis urna cursus eget nunc. Quisque egestas diam in arcu cursus
+					euismod quis viverra. Fusce ut placerat orci nulla pellentesque dignissim enim. Lobortis feugiat vivamus at
+					augue eget arcu dictum varius duis. At ultrices mi tempus imperdiet nulla. Tellus at urna condimentum
+					mattis.
+					Integer malesuada nunc vel risus commodo viverra maecenas.
+				</p>
+			</article>
+			<img src="./images/Group 7.png" alt="About" class="about-img">
+		</div>
+
+		<div id="team" class="page">
+			<div class="team">
+				<!-- About the founding team -->
+				<h1 class="page-title team-title">Founders</h1>
+				<div id="founders" class="team-group">
+					<div class="members">
+						<div class="founder card">
+							<img src="./images/avatar.svg" alt="Saar Davidson">
+							<div class="card-body">
+								<h2 class="name">Saar Davidson</h2>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+									et
+									dolore magna aliqua. Etiam sit amet nisl purus in mollis nunc. A arcu cursus vitae congue mauris
+									rhoncus
+									aenean. Mauris cursus mattis molestie a iaculis. Risus ultricies tristique nulla aliquet enim tortor
+									at
+									auctor.
+								</p>
+								<span>
+									<a href="#">
+										<img src="./images/li430.png" alt="linked in">
+									</a>
+									<a href="#">
+										<img src="./images/f430.png" alt="fb" class="fbutton">
+									</a>
+									<a href="#">
+										<img src="./images/tw430.png" alt="tw" class="tbutton">
+									</a>
+									<a href="#">
+										<img src="./images/web.png" alt="web" class="tbutton">
+									</a>
+								</span>
+							</div>
+						</div>
+						<div class="founder card">
+							<img src="./images/avatar.svg" alt="Shai Bauman">
+							<div class="card-body">
+								<h2 class="name">Shai Bauman</h2>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+									et
+									dolore magna aliqua. Etiam sit amet nisl purus in mollis nunc. A arcu cursus vitae congue mauris
+									rhoncus
+									aenean. Mauris cursus mattis molestie a iaculis. Risus ultricies tristique nulla aliquet enim tortor
+									at
+									auctor.
+								</p>
+								<span>
+									<a href="#">
+										<img src="./images/li430.png" alt="linked in">
+									</a>
+									<a href="#">
+										<img src="./images/f430.png" alt="fb" class="fbutton">
+									</a>
+									<a href="#">
+										<img src="./images/tw430.png" alt="tw" class="tbutton">
+									</a>
+									<a href="#">
+										<img src="./images/web.png" alt="web" class="tbutton">
+									</a>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="team">
+				<!-- About the mentors -->
+				<h1 class="page-title team-title">Mentors</h1>
+				<div id="mentors" class="team-group">
+					<div class="members">
+						<div class="mentor card">
+							<img src="./images/avatar.svg" alt="Someone one">
+							<div class="card-body">
+								<h2 class="name">Someone one</h2>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+									et
+									dolore magna aliqua. Etiam sit amet nisl purus in mollis nunc. A arcu cursus vitae congue mauris
+									rhoncus
+									aenean. Mauris cursus mattis molestie a iaculis. Risus ultricies tristique nulla aliquet enim tortor
+									at
+									auctor.
+								</p>
+								<span>
+									<a href="#">
+										<img src="./images/li430.png" alt="linked in">
+									</a>
+									<a href="#">
+										<img src="./images/f430.png" alt="fb" class="fbutton">
+									</a>
+									<a href="#">
+										<img src="./images/tw430.png" alt="tw" class="tbutton">
+									</a>
+									<a href="#">
+										<img src="./images/web.png" alt="web" class="tbutton">
+									</a>
+								</span>
+							</div>
+						</div>
+						<div class="mentor card">
+							<img src="./images/avatar.svg" alt="Someone two">
+							<div class="card-body">
+								<h2 class="name">Someone two</h2>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+									et
+									dolore magna aliqua. Etiam sit amet nisl purus in mollis nunc. A arcu cursus vitae congue mauris
+									rhoncus
+									aenean. Mauris cursus mattis molestie a iaculis. Risus ultricies tristique nulla aliquet enim tortor
+									at
+									auctor.
+								</p>
+								<span>
+									<a href="#">
+										<img src="./images/li430.png" alt="linked in">
+									</a>
+									<a href="#">
+										<img src="./images/f430.png" alt="fb" class="fbutton">
+									</a>
+									<a href="#">
+										<img src="./images/tw430.png" alt="tw" class="tbutton">
+									</a>
+									<a href="#">
+										<img src="./images/web.png" alt="web" class="tbutton">
+									</a>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- About the sponsors -->
+		<div id="sponsors" class="page">
+			<h1 class="page-title">Sponsors</h1>
+			<div class="members">
+				<div class="sponsor card">
+					<img src="./images/gold-ventures.png" alt="Gold ventures">
+					<span>Gold ventures</span>
+				</div>
+				<div class="sponsor card">
+					<img src="./images/colman.png" alt="Colman college">
+					<span>Colman college</span>
+				</div>
+				<div class="sponsor card">
+					<img src="./images/logo-student-union.svg" alt="Colman students union">
+					<span>Colman students union</span>
+				</div>
+			</div>
+		</div>
+
+		<div id="contact" class="page">
+
+		</div>
+	</main>
+	<!--END-->
+</body>
+
+</html>

@@ -1,0 +1,164 @@
+/* Tablet */
+@media (max-width: 900px) {
+  .page {
+    top: 0;
+    width: 90vw;
+  }
+
+  #main-header {
+    width: 100%;
+    bottom: 0;
+    border-top: var(--header-border);
+  }
+
+  #main-header #nav-links {
+    background-color: var(--primary-background-color);
+    flex-direction: column;
+    position: absolute;
+    bottom: calc(var(--header-height) - 2px);
+    right: 2em;
+    padding: 0;
+    z-index: 100;
+
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-top: var(--header-border);
+    border-left: var(--header-border);
+    border-right: var(--header-border);
+    transform: scaleY(0);
+    transform-origin: bottom;
+    transition: transform .3s .2s ease-in-out;
+  }
+
+  #main-header #nav-links.display {
+    transform: scaleY(1);
+    transition: transform .3s ease-in-out;
+  }
+
+  #main-header nav ul li {
+    padding: 2em;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    transition: opacity .25s ease-in-out;
+  }
+
+  #main-header nav ul.display li {
+    opacity: 1;
+    transition: opacity .25s .2s ease-in-out;
+  }
+
+  #main-header nav ul li:hover,
+  #main-header nav ul li.active {
+    background-color: var(--secondery-background-color);
+    border: 0;
+    border-radius: 0;
+  }
+
+  #main-header nav button {
+    margin-right: 3.5em;
+    height: 5em;
+  }
+
+  #main-header span.bar {
+    display: block;
+  }
+
+  #main-header .mobile {
+    display: flex;
+  }
+
+  main {
+    top: 1rem;
+  }
+
+  #about {
+    text-align: left;
+  }
+
+  #about article {
+    max-width: 100%;
+    margin-bottom: 3rem;
+  }
+
+  #about .about-img {
+    position: relative;
+  }
+
+  #about,
+  #team,
+  #sponsors {
+    padding-top: 0;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10rem;
+    text-align: center;
+  }
+
+  .team {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .members {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+
+  .team-group .founder.card,
+  .team-group .mentor.card {
+    margin-right: 0;
+    width: 100%;
+  }
+
+  .card img {
+    width: 100%;
+  }
+
+  .team-group {
+    text-align: left;
+  }
+
+  .page-title {
+    margin-bottom: 3rem;
+  }
+
+  #sponsors .sponsor {
+    width: 100%;
+  }
+}
+
+/* Smaller than tablets */
+
+@media (max-width: 630px) {
+  #main-header {
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+    height: 50px;
+  }
+
+  #main-header .logo {
+    margin: 0;
+    max-width: fit-content;
+  }
+
+  .logo img {
+    width: 100%;
+  }
+
+  #main-header nav {
+    height: 50px;
+  }
+
+  #main-header nav button {
+    margin-right: .5em;
+    height: 2em;
+  }
+
+  #about .about-img {
+    width: 90vw;
+  }
+}

@@ -1,0 +1,313 @@
+@font-face {
+  font-family: "OCR A Std";
+  src: url("//db.onlinewebfonts.com/t/6a9c6944fe8451dd397fe9d0763a4c88.eot");
+  src: url("//db.onlinewebfonts.com/t/6a9c6944fe8451dd397fe9d0763a4c88.eot?#iefix") format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/6a9c6944fe8451dd397fe9d0763a4c88.woff2") format("woff2"),
+    url("//db.onlinewebfonts.com/t/6a9c6944fe8451dd397fe9d0763a4c88.woff") format("woff"),
+    url("//db.onlinewebfonts.com/t/6a9c6944fe8451dd397fe9d0763a4c88.ttf") format("truetype"),
+    url("//db.onlinewebfonts.com/t/6a9c6944fe8451dd397fe9d0763a4c88.svg#OCR A Std") format("svg");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --header-height: 140px;
+  --primary-color: #4BC02E;
+  --secondery-color: white;
+  --primary-background-color: #2d2d2d;
+  --secondery-background-color: #373737;
+  --header-border: 1px solid #818181;
+}
+
+body {
+  background-color: var(--primary-background-color);
+  color: var(--secondery-color);
+  display: block;
+  margin: 0;
+  padding: 0;
+  background-image: url('../images/Rectangle\ 126@2x.png');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: cover;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: var(--secondery-color);
+}
+
+/* header */
+
+#main-header {
+  background-color: var(--primary-background-color);
+  min-height: var(--header-height);
+  padding: 1rem 5%;
+  border-bottom: var(--header-border);
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  width: 100vw;
+  z-index: 99;
+}
+
+#main-header .logo {
+  margin-left: 5%;
+}
+
+#main-header nav {
+  display: flex;
+  align-items: center;
+  font-family: OCR A Std, monospace;
+  font-style: normal;
+  font-weight: 400;
+  padding: 0 2rem;
+}
+
+#main-header nav button {
+  background-color: var(--secondery-background-color);
+  font-family: OCR A Std, monospace;
+  font-style: normal;
+  font-weight: 400;
+  border: none;
+  border-radius: 2em;
+  color: var(--primary-color);
+  font-size: 16px;
+  padding: 1em;
+  line-height: 0.1em;
+  height: 2em;
+  width: 7.1em;
+  cursor: pointer;
+  transition: background-color ease-in-out .3s;
+}
+
+#main-header nav button:hover {
+  background-color: #505050;
+}
+
+#main-header nav ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+}
+
+#main-header nav ul li {
+  font-size: 16px;
+  padding: .5rem;
+  border-radius: 2rem;
+  transition: background-color ease-in-out .3s;
+}
+
+#main-header nav ul li:hover {
+  background-color: var(--secondery-background-color);
+}
+
+#main-header nav ul li.active {
+  border: 1px solid var(--secondery-color);
+}
+
+#main-header .mobile {
+  display: none;
+}
+
+#main-header #toggle-button {
+  top: .75rem;
+  right: 1rem;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+}
+
+#main-header span.bar {
+  margin-top: 6px;
+  width: 100%;
+  background-color: var(--primary-color);
+  border-radius: 10px;
+  height: 3px;
+}
+
+/* .page */
+
+.page h1.page-title {
+  text-transform: uppercase;
+  font-size: 50px;
+  min-width: 330px;
+}
+
+main {
+  position: absolute;
+  top: var(--header-height);
+  font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
+
+  display: flex;
+  justify-content: center;
+
+  width: 100%;
+}
+
+.page {
+  width: 80vw;
+  display: flex;
+  position: absolute;
+  padding: 2rem 0;
+
+  /* has a problem with page size but can use the opacity animation
+  opacity: 0;
+  pointer-events: none;
+  transform: opacity .5s ease-in-out
+  */
+  transform: scaleY(0);
+}
+
+.display {
+  /*
+  opacity: 1;
+  pointer-events: all;
+  */
+  transform: scaleY(1);
+}
+
+/* #home */
+
+#home {
+  margin-top: 10%;
+}
+
+/* #about */
+
+#about article {
+  max-width: 35%;
+}
+
+#about article .page-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+#about article p {
+  margin-top: 2em;
+  font-size: 16px;
+  line-height: 1.5em;
+}
+
+#about article .fbutton {
+  margin-bottom: -2px;
+}
+
+#about .about-img {
+  position: absolute;
+  max-width: 500px;
+  max-height: 500px;
+  right: 0;
+}
+
+/* #team */
+
+#team {
+  display: block;
+}
+
+.team {
+  display: flex;
+}
+
+.team-group {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 2rem;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.team-title {
+  min-width: 330px;
+}
+
+.members {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.team-group .founder:last-child,
+.team-group .mentor:last-child {
+  margin-right: 0;
+}
+
+.name {
+  color: var(--primary-color);
+}
+
+.card {
+  background-color: var(--secondery-background-color);
+  border-radius: .5em;
+  width: 20rem;
+  margin-bottom: 2em;
+  margin-right: 1rem;
+}
+
+.card-body {
+  padding: 1em;
+}
+
+.card p {
+  width: 100%;
+  overflow-wrap: break-word;
+  margin-bottom: 1em;
+}
+
+.card img,
+.card h2 {
+  margin-bottom: .5em;
+}
+
+.card span {
+  margin-top: 2em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card .fbutton {
+  margin-bottom: 5px;
+}
+
+.card .tbutton {
+  margin-bottom: -.4em;
+}
+
+/* #sponsors */
+
+#sponsors .members {
+  width: 100%;
+  justify-content: space-around;
+}
+
+#sponsors .sponsor {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2em;
+  margin-bottom: 2em;
+  border-radius: 1em;
+  max-height: 17rem;
+  margin-right: 2em;
+  min-height: 400px;
+}
+
+#sponsors .sponsor span {
+  margin-top: 1.5em;
+  font-size: 22px;
+  text-align: center;
+  display: block;
+  font-weight: 700;
+}
+
+#sponsors .sponsor img {
+  max-width: 200px;
+  max-height: 200px;
+}
